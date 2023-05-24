@@ -3,7 +3,7 @@ const app = express()
 const path = require("path")
 const { engine } = require("express-handlebars")
 const hbs = require('hbs')
-const port = 3000
+const port = process.env.PORT || 3000
 
 // path variables
 const publicPath = path.join(__dirname, './public')
